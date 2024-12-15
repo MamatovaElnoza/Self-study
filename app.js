@@ -5,3 +5,5 @@ const numbers = [1, 2, 3];
 const anotherNumbers = [1, 2, 3];
 //Any
 const person = { firstname: "Elnoza" };
+//Object
+const person2 = { firstname: "Elnoza" };
