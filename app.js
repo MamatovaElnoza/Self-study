@@ -71,3 +71,22 @@ class ShoppingCart {
         return this.items.reduce((total, item) => total + item.price, 0);
     }
 }
+const laptop = {
+    id: 1,
+    title: "Laptop",
+    price: 1000,
+    warranty: "2 years",
+};
+const phone = {
+    id: 2,
+    title: "Smartphone",
+    price: 500,
+    warranty: "1 year",
+};
+// Create a shopping cart for Electronic products
+const cart = new ShoppingCart();
+// Add items to the cart
+cart.addItem(laptop);
+cart.addItem(phone);
+// Calculate the total price
+console.log(cart.calculateTotal()); // Output: 1500

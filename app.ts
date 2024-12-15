@@ -98,3 +98,32 @@ class ShoppingCart<T extends Product> {
     return this.items.reduce((total, item) => total + item.price, 0);
   }
 }
+
+// Define a product type that extends the Product interface
+interface Electronic extends Product {
+  warranty: string;
+}
+
+const laptop: Electronic = {
+  id: 1,
+  title: "Laptop",
+  price: 1000,
+  warranty: "2 years",
+};
+
+const phone: Electronic = {
+  id: 2,
+  title: "Smartphone",
+  price: 500,
+  warranty: "1 year",
+};
+
+// Create a shopping cart for Electronic products
+const cart = new ShoppingCart<Electronic>();
+
+// Add items to the cart
+cart.addItem(laptop);
+cart.addItem(phone);
+
+// Calculate the total price
+console.log(cart.calculateTotal()); // Output: 1500
