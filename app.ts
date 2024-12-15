@@ -73,3 +73,12 @@ class Engineer extends Person {
 const engineer = new Engineer("Ulugbek", "Uzbek", 26);
 engineer.technologies = ["Javascript", "Typescript"];
 console.log(engineer);
+
+//Generics
+function identity<T>(arg: T): T {
+  return arg;
+}
+
+console.log(identity(5));
+console.log(identity('hello'));
+console.log(identity([1, 2, 3]));
