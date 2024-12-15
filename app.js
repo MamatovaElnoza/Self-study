@@ -8,10 +8,10 @@ const person = { firstname: "Elnoza" };
 //Object
 const person2 = { firstname: "Elnoza" };
 //Parametres
-function add(a, b) {
+function add1(a, b) {
     return a + b;
 }
-console.log(add(2, 3));
+console.log(add1(2, 3));
 // console.log(add('Ulugbek', 25)); // X Error
 //Return Type
 function greeting(firstname) {
@@ -22,4 +22,10 @@ console.log(greeting("Elnoza"));
 function printGreeting(firstname) {
     console.log(`Hello, ${firstname}!`);
 }
-printGreeting('Islom');
+printGreeting("Islom");
+//Function Overloading
+function add(a, b) {
+    return a + b;
+}
+add("Hello", "Steve");
+add(10, 20);
