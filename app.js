@@ -7,3 +7,9 @@ const anotherNumbers = [1, 2, 3];
 const person = { firstname: "Elnoza" };
 //Object
 const person2 = { firstname: "Elnoza" };
+//Parametres
+function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 3));
+// console.log(add('Ulugbek', 25)); // X Error
