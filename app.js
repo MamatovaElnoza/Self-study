@@ -58,5 +58,16 @@ function identity(arg) {
     return arg;
 }
 console.log(identity(5));
-console.log(identity('hello'));
+console.log(identity("hello"));
 console.log(identity([1, 2, 3]));
+class ShoppingCart {
+    constructor() {
+        this.items = [];
+    }
+    addItem(item) {
+        this.items.push(item);
+    }
+    calculateTotal() {
+        return this.items.reduce((total, item) => total + item.price, 0);
+    }
+}

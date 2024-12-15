@@ -80,5 +80,21 @@ function identity<T>(arg: T): T {
 }
 
 console.log(identity(5));
-console.log(identity('hello'));
+console.log(identity("hello"));
 console.log(identity([1, 2, 3]));
+
+//Generics with Function and Class
+interface Product {
+  readonly id: number;
+  title: string;
+  price: number;
+}
+class ShoppingCart<T extends Product> {
+  private items: T[] = [];
+  addItem(item: T) {
+    this.items.push(item);
+  }
+  calculateTotal() {
+    return this.items.reduce((total, item) => total + item.price, 0);
+  }
+}
