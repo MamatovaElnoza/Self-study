@@ -16,3 +16,9 @@ function add(a: number, b: number) {
 }
 console.log(add(2, 3));
 // console.log(add('Ulugbek', 25)); // X Error
+
+//Return Type
+function greeting(firstname: string): string {
+  return `Hello, ${firstname}!`;
+}
+console.log(greeting("Elnoza"));

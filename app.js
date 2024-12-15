@@ -13,3 +13,8 @@ function add(a, b) {
 }
 console.log(add(2, 3));
 // console.log(add('Ulugbek', 25)); // X Error
+//Return Type
+function greeting(firstname) {
+    return `Hello, ${firstname}!`;
+}
+console.log(greeting("Elnoza"));
