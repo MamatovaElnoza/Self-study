@@ -18,3 +18,8 @@ function greeting(firstname) {
     return `Hello, ${firstname}!`;
 }
 console.log(greeting("Elnoza"));
+//Void
+function printGreeting(firstname) {
+    console.log(`Hello, ${firstname}!`);
+}
+printGreeting('Islom');

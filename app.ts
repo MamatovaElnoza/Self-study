@@ -22,3 +22,9 @@ function greeting(firstname: string): string {
   return `Hello, ${firstname}!`;
 }
 console.log(greeting("Elnoza"));
+
+//Void
+function printGreeting(firstname: string): void {
+  console.log(`Hello, ${firstname}!`);
+}
+printGreeting("Islom");
