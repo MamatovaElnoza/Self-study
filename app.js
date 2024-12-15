@@ -23,9 +23,11 @@ function printGreeting(firstname) {
     console.log(`Hello, ${firstname}!`);
 }
 printGreeting("Islom");
-//Function Overloading
 function add(a, b) {
     return a + b;
 }
 add("Hello", "Steve");
 add(10, 20);
+function greet(person) {
+    return `Hello, ${person.name}!`;
+}

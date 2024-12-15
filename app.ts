@@ -37,3 +37,12 @@ function add(a: any, b: any): any {
 }
 add("Hello", "Steve");
 add(10, 20);
+
+//Interface
+interface Person {
+  name: string;
+  age: number;
+}
+function greet(person: Person) {
+  return `Hello, ${person.name}!`;
+}
