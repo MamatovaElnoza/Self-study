@@ -31,3 +31,25 @@ add(10, 20);
 function greet(person) {
     return `Hello, ${person.name}!`;
 }
+//OOP
+class Person {
+    constructor(firstname, nationality, age1) {
+        this.firstname = firstname;
+        this.nationality = nationality;
+        this.age1 = age1;
+    }
+    greet() {
+        return `Hello, ${this.firstname}!`;
+    }
+}
+const person3 = new Person("Ulugbek", "Uzbek", 26);
+console.log(person3.greet());
+class Engineer extends Person {
+    constructor(firstname, nationality, age1) {
+        super(firstname, nationality, age1);
+        this.technologies = [];
+    }
+}
+const engineer = new Engineer("Ulugbek", "Uzbek", 26);
+engineer.technologies = ["Javascript", "Typescript"];
+console.log(engineer);

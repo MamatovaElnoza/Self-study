@@ -46,3 +46,30 @@ interface Person {
 function greet(person: Person) {
   return `Hello, ${person.name}!`;
 }
+
+//OOP
+class Person {
+  public firstname: string;
+  protected nationality: string;
+  private age1: number;
+  constructor(firstname: string, nationality: string, age1: number) {
+    this.firstname = firstname;
+    this.nationality = nationality;
+    this.age1 = age1;
+  }
+  greet() {
+    return `Hello, ${this.firstname}!`;
+  }
+}
+const person3 = new Person("Ulugbek", "Uzbek", 26);
+console.log(person3.greet());
+
+class Engineer extends Person {
+  public technologies: string[] = [];
+  constructor(firstname: string, nationality: string, age1: number) {
+    super(firstname, nationality, age1);
+  }
+}
+const engineer = new Engineer("Ulugbek", "Uzbek", 26);
+engineer.technologies = ["Javascript", "Typescript"];
+console.log(engineer);
