@@ -147,3 +147,21 @@ const logCar = (car: { carName: string; year?: string }): string => {
   return `Name of the car - ${car.carName}, created with - ${car.year}!`;
 };
 console.log(logCar({ carName: "Supra", year: "love" }));
+
+//Car Task
+interface SCar {
+  name: string;
+  color: string;
+  isBallon: boolean;
+  speed: SCarSpeed;
+  price: SCarPrice
+}
+interface SCarSpeed {
+  max: number;
+  min: number;
+}
+interface SCarPrice {
+  total: string;
+  credit: string;
+  discount: number;
+}
