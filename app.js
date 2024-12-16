@@ -118,3 +118,18 @@ function loggertype(action) {
     }
 }
 console.log(loggertype);
+//ENUM
+var Dictionary;
+(function (Dictionary) {
+    Dictionary[Dictionary["Eng"] = 0] = "Eng";
+    Dictionary[Dictionary["Uzb"] = 1] = "Uzb";
+    Dictionary[Dictionary["Rus"] = 2] = "Rus";
+})(Dictionary || (Dictionary = {}));
+const runEnum = () => {
+    return 2;
+};
+var Decision;
+(function (Decision) {
+    Decision[Decision["Yes"] = 1] = "Yes";
+    Decision[Decision["No"] = runEnum()] = "No";
+})(Decision || (Decision = {}));

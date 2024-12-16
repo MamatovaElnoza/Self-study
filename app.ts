@@ -178,3 +178,17 @@ function loggertype(action: actionType): 1 | -1 {
   }
 }
 console.log(loggertype);
+
+//ENUM
+enum Dictionary {
+  Eng,
+  Uzb,
+  Rus,
+}
+const runEnum = (): number => {
+  return 2;
+};
+enum Decision {
+  Yes = 1,
+  No = runEnum(),
+}
