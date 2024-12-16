@@ -185,6 +185,11 @@ enum Dictionary {
   Uzb,
   Rus,
 }
+const uzbIndex = Dictionary.Uzb;
+const uzb = Dictionary[uzbIndex];
+console.log(uzbIndex);
+console.log(uzb);
+
 const runEnum = (): number => {
   return 2;
 };

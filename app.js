@@ -125,6 +125,10 @@ var Dictionary;
     Dictionary[Dictionary["Uzb"] = 1] = "Uzb";
     Dictionary[Dictionary["Rus"] = 2] = "Rus";
 })(Dictionary || (Dictionary = {}));
+const uzbIndex = Dictionary.Uzb;
+const uzb = Dictionary[uzbIndex];
+console.log(uzbIndex);
+console.log(uzb);
 const runEnum = () => {
     return 2;
 };
