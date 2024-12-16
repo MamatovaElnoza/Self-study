@@ -106,4 +106,4 @@ numberv.map((num) => console.log(num.toFixed()));
 const logCar = (car) => {
     return `Name of the car - ${car.carName}, created with - ${car.year}!`;
 };
-console.log(logCar({ carName: "Supra", year: 'love' }));
+console.log(logCar({ carName: "Supra", year: "love" }));

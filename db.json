@@ -1,0 +1,14 @@
+{
+    "name": "Supra",
+    "color": "Red",
+    "isBalloon": false,
+    "speed":{
+        "max":330,
+        "min":120
+    },
+    "price":{
+        "total": "20.000",
+        "credit": "100",
+        "discount": 10
+    }
+}
