@@ -154,7 +154,7 @@ interface SCar {
   color: string;
   isBallon: boolean;
   speed: SCarSpeed;
-  price: SCarPrice
+  price: SCarPrice;
 }
 interface SCarSpeed {
   max: number;
@@ -165,3 +165,16 @@ interface SCarPrice {
   credit: string;
   discount: number;
 }
+
+//Literal Type
+let bmw: "bmw" = "bmw";
+type actionType = "show" | "hide";
+function loggertype(action: actionType): 1 | -1 {
+  switch (action) {
+    case "hide":
+      return 1;
+    case "show":
+      return -1;
+  }
+}
+console.log(loggertype);

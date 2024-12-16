@@ -107,3 +107,14 @@ const logCar = (car) => {
     return `Name of the car - ${car.carName}, created with - ${car.year}!`;
 };
 console.log(logCar({ carName: "Supra", year: "love" }));
+//Literal Type
+let bmw = "bmw";
+function loggertype(action) {
+    switch (action) {
+        case "hide":
+            return 1;
+        case "show":
+            return -1;
+    }
+}
+console.log(loggertype);
