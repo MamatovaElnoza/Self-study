@@ -140,3 +140,10 @@ function logger(a: number | string): void {
 const numberv: number[] = [1, 2, 3, 4, 5];
 
 numberv.map((num: number) => console.log(num.toFixed()));
+
+//year - required
+//year - unrequired - ?
+const logCar = (car: { carName: string; year?: string }): string => {
+  return `Name of the car - ${car.carName}, created with - ${car.year}!`;
+};
+console.log(logCar({ carName: "Supra", year: 'love' }));
