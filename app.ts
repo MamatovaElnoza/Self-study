@@ -127,3 +127,16 @@ cart.addItem(phone);
 
 // Calculate the total price
 console.log(cart.calculateTotal()); // Output: 1500
+
+// ======================= Typescript with Sammi.ac ============================
+
+function logger(a: number | string): void {
+  if (typeof a === "number") {
+    console.log(a.toFixed());
+  } else if (typeof a === "string") {
+    console.log(a.toLocaleLowerCase());
+  }
+}
+const numberv: number[] = [1, 2, 3, 4, 5];
+
+numberv.map((num: number) => console.log(num.toFixed()));
