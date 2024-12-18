@@ -137,3 +137,25 @@ var Decision;
     Decision[Decision["Yes"] = 1] = "Yes";
     Decision[Decision["No"] = runEnum()] = "No";
 })(Decision || (Decision = {}));
+var Raqamlar;
+(function (Raqamlar) {
+    Raqamlar[Raqamlar["One"] = 0] = "One";
+    Raqamlar[Raqamlar["Two"] = 1] = "Two";
+    Raqamlar[Raqamlar["Three"] = 2] = "Three";
+    Raqamlar[Raqamlar["Four"] = 3] = "Four";
+})(Raqamlar || (Raqamlar = {}));
+function getRaqamlar(raqam) {
+    switch (raqam) {
+        case Raqamlar.One:
+            return "Bir";
+        case Raqamlar.Two:
+            return "Ikki";
+        case Raqamlar.Three:
+            return "Uch";
+        case Raqamlar.Four:
+            return "To'rt";
+        default:
+            const a = raqam;
+    }
+}
+console.log(getRaqamlar(Raqamlar.Two));

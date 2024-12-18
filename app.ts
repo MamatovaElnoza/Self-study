@@ -197,3 +197,26 @@ enum Decision {
   Yes = 1,
   No = runEnum(),
 }
+
+enum Raqamlar {
+  One,
+  Two,
+  Three,
+  Four,
+}
+function getRaqamlar(raqam: Raqamlar) {
+  switch (raqam) {
+    case Raqamlar.One:
+      return "Bir";
+    case Raqamlar.Two:
+      return "Ikki";
+    case Raqamlar.Three:
+      return "Uch";
+    case Raqamlar.Four:
+      return "To'rt";
+    default:
+      const a: never = raqam;
+  }
+}
+console.log(getRaqamlar(Raqamlar.Two));
+
