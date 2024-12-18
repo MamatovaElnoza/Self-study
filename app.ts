@@ -220,3 +220,9 @@ function getRaqamlar(raqam: Raqamlar) {
 }
 console.log(getRaqamlar(Raqamlar.Two));
 
+//Tuples = Array
+const array: [number, number, string] = [1, 2, "a"];
+const ad = array.push(4);
+console.log(array[1]);
+console.log(ad);
+
