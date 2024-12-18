@@ -226,3 +226,19 @@ const ad = array.push(4);
 console.log(array[1]);
 console.log(ad);
 const [a, ...rest] = array;
+
+//Generics
+interface ICar {
+  name: string;
+  color: string;
+}
+function loggerTime<T>(data: T): T {
+  console.log(new Date());
+  return data;
+}
+const car = {
+  name: "bmw",
+  color: "red",
+};
+const myCar = loggerTime<ICar>(car);
+console.log(loggerTime<ICar>(car));

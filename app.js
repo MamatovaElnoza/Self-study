@@ -165,3 +165,13 @@ const ad = array.push(4);
 console.log(array[1]);
 console.log(ad);
 const [a, ...rest] = array;
+function loggerTime(data) {
+    console.log(new Date());
+    return data;
+}
+const car = {
+    name: "bmw",
+    color: "red",
+};
+const myCar = loggerTime(car);
+console.log(loggerTime(car));
