@@ -225,4 +225,4 @@ const array: [number, number, string] = [1, 2, "a"];
 const ad = array.push(4);
 console.log(array[1]);
 console.log(ad);
-
+const [a, ...rest] = array;
