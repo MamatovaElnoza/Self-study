@@ -178,7 +178,11 @@ const car = {
     name: "bmw",
     color: "red",
 };
+//Generics with Class
 class Car {
 }
 const ab = new Car();
 console.log(ab.data);
+function busLogger(dat) {
+    return dat.busName;
+}

@@ -246,8 +246,17 @@ const car = {
   color: "red",
 };
 
+//Generics with Class
 class Car<T> {
   data: T;
 }
-const ab= new Car<number>();
+const ab = new Car<number>();
 console.log(ab.data);
+
+//Generics with Function
+interface IBus {
+  busName: string;
+}
+function busLogger<T extends IBus>(dat: T): string {
+  return dat.busName;
+}
