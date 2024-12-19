@@ -231,14 +231,17 @@ const [a, ...rest] = array;
 interface ICar {
   name: string;
   color: string;
+  onSpeed: <T, G, I>(data: T) => G;
 }
 function loggerTime<T>(data: T): T {
-  console.log(new Date());
+  if (typeof data === "string") {
+    data.toLowerCase();
+  } else if (typeof data === "number") {
+    data.toFixed();
+  }
   return data;
 }
 const car = {
   name: "bmw",
   color: "red",
 };
-const myCar = loggerTime<ICar>(car);
-console.log(loggerTime<ICar>(car));

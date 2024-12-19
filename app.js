@@ -166,12 +166,15 @@ console.log(array[1]);
 console.log(ad);
 const [a, ...rest] = array;
 function loggerTime(data) {
-    console.log(new Date());
+    if (typeof data === "string") {
+        data.toLowerCase();
+    }
+    else if (typeof data === "number") {
+        data.toFixed();
+    }
     return data;
 }
 const car = {
     name: "bmw",
     color: "red",
 };
-const myCar = loggerTime(car);
-console.log(loggerTime(car));
