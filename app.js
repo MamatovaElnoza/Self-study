@@ -178,3 +178,7 @@ const car = {
     name: "bmw",
     color: "red",
 };
+class Car {
+}
+const ab = new Car();
+console.log(ab.data);

@@ -245,3 +245,9 @@ const car = {
   name: "bmw",
   color: "red",
 };
+
+class Car<T> {
+  data: T;
+}
+const ab= new Car<number>();
+console.log(ab.data);
